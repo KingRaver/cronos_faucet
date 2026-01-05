@@ -377,8 +377,8 @@ MIT License – See LICENSE file for details. Feel free to fork, modify, and dep
 
 ## 🌐 Links & Resources
 
-- **Website**: [cro-gas.vercel.app](https://cro-gas.vercel.app)
-- **GitHub**: [github.com/0xShortx/CroGas](https://github.com/0xShortx/CroGas)
+- **Website**: [cro-gas.vercel.app](https://cro-gas.vercel.app/)
+- **GitHub**: [github.com/0xShortx/CroGas](https://github.com/KingRaver/cronos_faucet)
 - **Cronos Docs**: [docs.cronos.org](https://docs.cronos.org)
 - **x402 Protocol**: [x402.org](https://x402.org) | [Coinbase Docs](https://docs.cdp.coinbase.com/x402/welcome)
 - **Cronos Testnet Faucet**: [cronos.org/faucet](https://cronos.org/faucet)
@@ -387,7 +387,7 @@ MIT License – See LICENSE file for details. Feel free to fork, modify, and dep
 
 ## 👨‍💻 Team & Contact
 
-**Developed by**: 0xShortx ([@github](https://github.com/0xShortx))
+**Developed by**: 0xShortx ([@github](https://github.com/KingRaver))
 
 **Questions? Ideas? Partners?**
 - Open an issue on GitHub
