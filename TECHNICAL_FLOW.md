@@ -1,4 +1,3 @@
-```mermaid
 sequenceDiagram
     participant User as 👤 Creator/User
     participant Frontend as 🖥️ Frontend<br/>Next.js
@@ -32,42 +31,18 @@ sequenceDiagram
         Backend->>Blockchain: Execute Meta-Transaction
         Blockchain->>Blockchain: Relay Contract<br/>executeTx()
         Blockchain->>Blockchain: Target Contract<br/>Execute User Calldata
-        Blockchain-->>Backend: ✅ Execution Success
+        Blockchain-->>Backend: Execution Success
         
         Backend->>Blockchain: Settle Payment<br/>USDC Transfer
         Blockchain->>Blockchain: EIP-3009<br/>transferWithAuthorization()
-        Blockchain-->>Backend: ✅ Payment Confirmed
+        Blockchain-->>Backend: Payment Confirmed
         
         Backend->>Backend: Increment User Nonce
         Backend-->>Frontend: 5. Return Success<br/>(txHash + explorer URL)
-        Frontend-->>User: 🎉 Transaction Confirmed
+        Frontend-->>User: Transaction Confirmed
         Frontend->>Frontend: Update Dashboard
         Frontend->>Frontend: Show Notification
         User->>Frontend: View Transaction<br/>on Cronoscan
         
     else Signature Invalid
-        Backend-->>Frontend: ❌ Error 401
-        Frontend-->>User: Invalid Signature
-        
-    else Insufficient Balance
-        Backend-->>Frontend: ❌ Error 402<br/>Payment Required
-        Frontend-->>User: Insufficient USDC
-        
-    else Rate Limited
-        Backend-->>Frontend: ❌ Error 429<br/>Too Many Requests
-        Frontend-->>User: Rate Limited (retry later)
-        
-    else Relay Failed
-        Backend-->>Frontend: ❌ Error 500<br/>Relay Execution Failed
-        Frontend-->>User: Transaction Failed<br/>(see Cronoscan)
-    end
-    
-    note over Backend,Blockchain
-        Key Security Features:
-        ✓ EIP-712 Signature Verification
-        ✓ Nonce-Based Replay Protection
-        ✓ Rate Limiting (100 req/hour)
-        ✓ Balance Validation (USDC + CRO)
-        ✓ Encrypted Relayer Keys (AES-256)
-    end
-```
+        Backend-->>Frontend: Erro
