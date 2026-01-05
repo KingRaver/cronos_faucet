@@ -167,7 +167,7 @@ Fully compliant with the **Coinbase x402 specification**:
 
 ```bash
 # Clone repository
-git clone https://github.com/0xShortx/CroGas.git
+git clone https://github.com/KingRaver/cronos_faucet.git
 cd CroGas
 
 # Install dependencies
@@ -387,7 +387,7 @@ MIT License – See LICENSE file for details. Feel free to fork, modify, and dep
 
 ## 👨‍💻 Team & Contact
 
-**Developed by**: 0xShortx ([@github](https://github.com/KingRaver))
+**Developed by**: KingRaver ([@github](https://github.com/KingRaver))
 
 **Questions? Ideas? Partners?**
 - Open an issue on GitHub
