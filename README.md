@@ -168,7 +168,7 @@ Fully compliant with the **Coinbase x402 specification**:
 ```bash
 # Clone repository
 git clone https://github.com/KingRaver/cronos_faucet.git
-cd CroGas
+cd cronos_faucet
 
 # Install dependencies
 npm install
